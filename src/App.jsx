@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -53,9 +52,7 @@ export default function CatWiseSupport() {
         {sent ? (
           <div style={styles.successBox}>
             <h2 style={styles.successTitle}>Message sent!</h2>
-            <p style={styles.text}>
-              Thanks for reaching out. I’ll respond soon.
-            </p>
+            <p style={styles.text}>Thanks for reaching out. I’ll respond soon.</p>
             <button style={styles.button} onClick={() => setSent(false)}>
               Send Another Message
             </button>
@@ -124,6 +121,7 @@ const styles = {
     padding: "40px 20px",
     fontFamily: "Arial, sans-serif",
     color: "#1f2937",
+    colorScheme: "light",
   },
   card: {
     width: "100%",
@@ -131,11 +129,13 @@ const styles = {
     background: "#ffffff",
     borderRadius: "16px",
     padding: "32px",
-    boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
+    colorScheme: "light",
   },
   title: {
     fontSize: "32px",
     margin: "0 0 12px",
+    color: "#111827",
   },
   text: {
     fontSize: "16px",
@@ -152,12 +152,18 @@ const styles = {
     fontSize: "14px",
     fontWeight: "600",
     marginTop: "8px",
+    color: "#374151",
   },
   input: {
     padding: "12px 14px",
     border: "1px solid #d1d5db",
     borderRadius: "8px",
     fontSize: "16px",
+    backgroundColor: "#ffffff",
+    color: "#111827",
+    colorScheme: "light",
+    outline: "none",
+    WebkitAppearance: "none",
   },
   textarea: {
     padding: "12px 14px",
@@ -166,6 +172,11 @@ const styles = {
     fontSize: "16px",
     resize: "vertical",
     fontFamily: "Arial, sans-serif",
+    backgroundColor: "#ffffff",
+    color: "#111827",
+    colorScheme: "light",
+    outline: "none",
+    WebkitAppearance: "none",
   },
   button: {
     marginTop: "16px",
@@ -177,6 +188,7 @@ const styles = {
     fontSize: "16px",
     fontWeight: "600",
     cursor: "pointer",
+    colorScheme: "light",
   },
   error: {
     color: "#dc2626",
